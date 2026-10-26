@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | Noor Hijab House</title>
+<meta name="description" content="Enter your delivery details and send your order to Noor Hijab House on WhatsApp.">
+<meta name="theme-color" content="#0f5a46">
+<link rel="canonical" href="https://YOUR-SITE-URL/checkout.html">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Noor Hijab House">
+<meta property="og:title" content="Checkout | Noor Hijab House">
+<meta property="og:description" content="Enter your delivery details and send your order to Noor Hijab House on WhatsApp.">
+<meta property="og:url" content="https://YOUR-SITE-URL/checkout.html">
+<meta property="og:image" content="https://YOUR-SITE-URL/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="checkout" >
+<a class="skip" href="#main">Skip to content</a>
+<div class="announce">Free shipping above ₹999 &nbsp;·&nbsp; Use code <b>WELCOME10</b> for 10% off &nbsp;·&nbsp; Cash on delivery available</div>
+<header class="site-header"><div class="container hdr">
+<button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<a class="brand" href="index.html" aria-label="Noor Hijab House — home"><span class="wordmark">Noor Hijab House<small>MODEST FASHION</small></span></a>
+<nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="hijabs.html">Hijabs</a><a href="caps.html">Caps</a><a href="accessories.html">Accessories</a><a href="new-arrivals.html">New Arrivals</a></nav>
+<div class="hdr-tools">
+<form class="search" action="shop.html" method="get" role="search"><label class="sr-only" for="hs">Search products</label><input id="hs" name="q" type="search" placeholder="Search…"><button class="icon-btn" type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button></form>
+<a class="icon-btn" href="track.html" aria-label="Track order" title="Track your order"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg></a>
+<a class="icon-btn" href="cart.html" aria-label="Shopping bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" data-bag-count data-n="0">0</span></a>
+</div></div></header>
+<div class="scrim" id="scrim"></div>
+<aside class="mobile-nav" id="mobile-nav" aria-label="Mobile menu" aria-hidden="true">
+<div style="display:flex;justify-content:space-between;align-items:center"><strong style="font-family:var(--serif);font-size:1.3rem;color:var(--emerald-deep)">Menu</strong><button class="icon-btn" id="menu-close" aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+<form class="m-search search" action="shop.html" method="get" role="search"><label class="sr-only" for="ms">Search products</label><input id="ms" name="q" type="search" placeholder="Search products…"><button class="icon-btn" type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button></form>
+<a href="index.html">Home</a><a href="shop.html">Shop</a><a href="hijabs.html">Hijabs</a><a href="caps.html">Caps</a><a href="accessories.html">Accessories</a><a href="new-arrivals.html">New Arrivals</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="shipping.html">Shipping</a><a href="delivery.html">Delivery</a><a href="returns.html">Returns</a><a href="faq.html">FAQ</a><a href="track.html">Track Order</a></aside>
+<main id="main">
+<section class="page-head"><div class="container"><h1>Checkout</h1><p>Enter your delivery details, choose payment and place your order.</p></div></section><div class="container crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="cart.html">Shopping Bag</a><span>/</span>Checkout</div><section class="container"><div class="cart-layout" id="checkout"><div><form id="co-form" class="panel" novalidate><h3>Delivery details</h3><div class="form">
+<div class="full"><label for="name">Full name</label><input class="field" id="name" name="name" type="text" autocomplete="name"  required><div class="err" id="e-name" role="alert"></div></div>
+<div class="full"><label for="phone">Mobile / WhatsApp number</label><input class="field" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="10-digit number" required><div class="err" id="e-phone" role="alert"></div></div>
+<div class="full"><label for="address">Full delivery address</label><textarea class="field" id="address" name="address" rows="3" autocomplete="street-address" required></textarea><div class="err" id="e-address" role="alert"></div></div>
+<div class=""><label for="city">City / Town</label><input class="field" id="city" name="city" type="text" autocomplete="address-level2"  required><div class="err" id="e-city" role="alert"></div></div>
+<div><label for="state">State</label><select class="field" id="state" name="state" autocomplete="address-level1" required><option value="">Select state</option><option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option><option>Chhattisgarh</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Odisha</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option><option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option><option>West Bengal</option><option>Andaman and Nicobar Islands</option><option>Chandigarh</option><option>Dadra and Nagar Haveli and Daman and Diu</option><option>Delhi</option><option>Jammu and Kashmir</option><option>Ladakh</option><option>Lakshadweep</option><option>Puducherry</option></select><div class="err" id="e-state" role="alert"></div></div>
+<div class=""><label for="pin">PIN code</label><input class="field" id="pin" name="pin" type="text" autocomplete="postal-code" inputmode="numeric" maxlength="6" required><div class="err" id="e-pin" role="alert"></div></div>
+<div class="full"><label for="notes">Notes (optional)</label><textarea class="field" id="notes" name="notes" rows="2" placeholder="Colour preference, delivery notes…"></textarea></div>
+<div class="full"><fieldset class="pay"><legend>Payment method</legend><label><input type="radio" name="pay" value="Cash on Delivery" data-k="cod" checked> Cash on delivery</label><label><input type="radio" name="pay" value="UPI" data-k="upi"> UPI (pay after order confirmation)</label><label><input type="radio" name="pay" value="Bank transfer" data-k="bank"> Bank transfer</label></fieldset><button class="btn block" type="submit">Place Order</button></div></div></form>
+<div id="review" class="panel" hidden><h3>Review your order</h3><p>This is the message that will be sent to Noor Hijab House on WhatsApp. Check it, then tap the green button.</p>
+<div class="msg-preview" id="msg"></div>
+<p class="notice" style="margin-top:1rem"><strong>Please note:</strong> opening WhatsApp does not confirm your order. The store owner must confirm availability, final price, shipping charges and delivery details with you.</p>
+<div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem"><button class="btn ghost" id="edit" type="button">Edit Details</button><a class="btn wa" id="send" href="#" target="_blank" rel="noopener">Send Order on WhatsApp</a></div>
+<p id="after" hidden class="notice" style="margin-top:1rem">WhatsApp should now be open with your order message. Press <strong>Send</strong> in WhatsApp to deliver it to us. Your order is <strong>not confirmed</strong> until the store replies and confirms. Your bag has been kept in case you need to resend. <a href="cart.html">Back to bag</a></p></div></div><aside class="summary" aria-label="Your order"><h3>Your Order</h3><div id="co-items"></div><p style="font-size:.82rem;color:var(--muted);margin-top:.8rem">No online payment is taken on this website. The store confirms your order and payment on WhatsApp.</p></aside></div></section>
+</main>
+<footer class="site-footer"><div class="container">
+<div class="foot-grid">
+<div><div class="wordmark">Noor Hijab House</div><p style="color:var(--gold-light);letter-spacing:.2em;font-size:.72rem;text-transform:uppercase;margin:.3rem 0 1rem">Modest Fashion for Every You</p>
+<p>Your shop address, City, State PIN</p><p>WhatsApp: <a style="display:inline" href="https://wa.me/919229048879" target="_blank" rel="noopener">+91 92290 48879</a></p><p>Shipping all over India.</p></div>
+<div><h4>Shop</h4><a href="shop.html">All Products</a><a href="hijabs.html">Hijabs</a><a href="caps.html">Caps &amp; Inner Caps</a><a href="accessories.html">Pins &amp; Accessories</a><a href="new-arrivals.html">New Arrivals</a><a href="cart.html">Shopping Bag</a></div>
+<div><h4>Help</h4><a href="shipping.html">Shipping Policy</a><a href="track.html">Track Order</a><a href="delivery.html">Delivery Information</a><a href="returns.html">Returns &amp; Exchanges</a><a href="faq.html">FAQs</a><a href="contact.html">Contact Us</a></div>
+<div><h4>Company</h4><a href="about.html">About Us</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="https://www.google.com/maps/search/?api=1&query=Your City+Hijab+House+D.S.+College+Road+Nasirganj+Your City+854105" target="_blank" rel="noopener">Find Us on Maps</a></div>
+</div>
+<div class="foot-bottom"><span>© 2026 Noor Hijab House. All rights reserved.</span><span>Demo store with sample products and prices. <a href="admin.html" style="margin-left:.8rem">Admin demo</a></span></div>
+</div></footer>
+<a class="wa-float" href="https://wa.me/919229048879" target="_blank" rel="noopener" aria-label="Chat with Noor Hijab House on WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3Zm0 2.4a10.6 10.6 0 1 1-5.4 19.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4A10.6 10.6 0 0 1 16 5.4Zm-4 5.2c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.2 2.6 4.1 6.4 5.6 3.1 1.2 3.8 1 4.5.9.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.4-.3-.8-.5l-2.7-1.3c-.4-.1-.6-.1-.9.2l-1.2 1.5c-.2.3-.5.3-.9.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.3.1-.5 0-.7l-1.2-2.9c-.3-.7-.6-.7-.9-.7Z"/></svg></a>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
